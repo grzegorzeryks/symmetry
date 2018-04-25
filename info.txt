@@ -1,0 +1,13 @@
+Cpanel Username: b11_19037598
+Cpanel Password: Veto666
+Your URL: http://sarmacki.byethost11.com or http://www.sarmacki.byethost11.com
+FTP Server : ftp.byethost11.com
+FTP Login : b11_19037598
+FTP Password : Veto666
+MySQL Database Name: MUST CREATE IN CPANEL
+MySQL Username : b11_19037598
+MySQL Password : Veto666
+MySQL Server: SEE THE CPANEL
+
+
+Cpanel URL: http://cpanel.byethost11.com/

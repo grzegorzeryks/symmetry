@@ -1,0 +1,433 @@
+html {
+  color: white;
+  font-family: 'Lato', 'Arial', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+  background-color: black;
+}
+
+
+/*------------------------ Reusable components -----------*/
+
+.anchor {
+  display: block;
+  visibility: hidden;
+}
+
+.anchor-one {
+  height: 100px;
+  /*same height as header*/
+  margin-top: -115px;
+  /*same height as header*/
+}
+
+.row {
+  max-width: 1450px;
+  /*maksymalna szerokośc monitora na jakiej będzie strona */
+  margin: 0 auto;
+  /* margines na auto: ; aby centrowac elementy row */
+  padding: 70px;
+}
+
+.row-intro {
+  padding: 0;
+}
+
+section {}
+
+.Mybox {
+  padding: 1%;
+}
+
+
+/* ----Headings -----*/
+
+h1, h2, h3 {
+  font-weight: 400;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  font-size: 240%;
+}
+
+h2 {
+  font-size: 200%;
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+h3 {
+  font-size: 160%;
+}
+
+p {
+  line-height: 150%;
+  font-size: 120%;
+  padding: 20px 60px;
+  text-align: center;
+}
+
+.pe {
+  line-height: 100%;
+  font-size: 200%;
+  transition: color 0.3s;
+  padding: 0 0 0 0;
+  text-align: center;
+  color: #ffae01;
+}
+
+.pe2 {
+  line-height: 100%;
+  font-size: 200%;
+  transition: color 0.3s;
+background-color: black;
+  text-align: center;
+    padding: 0 0 0 0;
+  color: #ffae01;
+  bottom: 0;
+}
+
+.pe a:hover {
+  color: white;
+}
+
+.breaker {
+  width: 100%;
+  height: 60px;
+  background-image: url(../img/roz.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -14px;
+  background-size: cover;
+}
+
+
+/* ---------------------HEAD --------------------------------*/
+
+header {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+}
+
+.main-nav {
+  /*  height: 6vh;*/
+  height: 70px;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  padding: 5px 30px 0 30px;
+  font-size: 1.1vw;
+}
+
+.main-nav li a:link, .main-nav li a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.main-nav li a:hover, .main-nav li a:active {
+  color: #ffae01;
+}
+
+.logoS {
+  background-color: #000000;
+  position: relative;
+  top: 10px;
+}
+
+
+/* arrow logo */
+
+.logoS:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-top-color: #000000;
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+.logoS:after:hover {
+  left: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  padding: 20px 0 16px 20px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 8px 18px 0 0;
+  display: block;
+}
+
+
+/*------------------------ SECTION intro -----------*/
+
+.intro {
+  height: 100vh;
+  background-image: url(../img/sym.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+/*------------------------ SECTION ONE -----------*/
+
+.section-one {
+  background-color: rgb(0, 0, 0);
+  margin-top: 50px;
+}
+
+.myBox {
+  text-align: justify;
+}
+
+.myBox h1 {
+  padding: 60px 0 0 0;
+}
+
+.myBox p {
+  padding: 20px 60px;
+}
+
+.myBox-in {
+  padding: 10% 0 0 0;
+}
+
+.photo-train {
+  text-align: center;
+}
+
+
+/*------------------------ SECTION TWO -----------*/
+
+.section-two {
+  height: auto;
+  background-color: black;
+  width: 100%;
+  color: white;
+  margin: 50px 0 0 0;
+  padding-bottom: 20px;
+  background-image: url(../img/mm.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/*------------------------ SECTION THREE -----------*/
+
+.online {
+  height: 600px;
+  background-image: url(../img/online.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-top: -40px;
+}
+
+.online-in {
+  width: 45%;
+  padding-left: 10%;
+}
+
+.online h2 {
+  padding-top: 20%;
+  text-align: left;
+}
+
+.online div {
+  padding-top: 2%;
+}
+
+.online a {
+  padding: 5px 0 0 50px;
+}
+
+.online img {
+  width: 12%;
+  transition: width 0.3s;
+}
+
+.online img:hover {
+  width: 9%;
+}
+
+
+/*------------------------ SECTION online coaching -----------*/
+
+.coach {
+  background-color: rgb(248, 248, 248);
+  margin-top: 50px;
+}
+
+
+/*------------------------ SECTION contact -----------*/
+
+.section-contact {
+  background-color: black;
+  color: white;
+  background-image: url(../img/mm.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+
+/* -------------------popup email --------------------------*/
+
+#abc {
+  width: 100%;
+  height: 100%;
+  opacity: .95;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  overflow: auto
+}
+
+img.close {
+  position: absolute;
+  right: -14px;
+  top: -14px;
+  cursor: pointer
+}
+
+div.popupContact {
+  position: absolute;
+  left: 50%;
+  top: 17%;
+  margin-left: -202px;
+}
+
+form {
+  max-width: 300px;
+  min-width: 250px;
+  padding: 10px 50px;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: #fff
+}
+
+p {
+  margin-top: 30px
+}
+
+.popupContact h2 {
+  background-color: #000000;
+  padding: 20px 35px;
+  margin: -10px -50px;
+  text-align: center;
+  color: white;
+}
+
+.section-contact p {
+  padding: 1px 2px;
+}
+
+hr {
+  margin: 10px -50px;
+  border: 0;
+  border-top: 1px solid #ccc
+}
+
+input[type=text] {
+  width: 82%;
+  padding: 10px;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  padding-left: 40px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 82%;
+  height: 95px;
+  padding: 10px;
+  resize: none;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  padding-left: 40px;
+  font-size: 16px;
+  margin-bottom: 30px
+}
+
+#submit {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-color: #ffae01;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 0 20px;
+  height: 45px;
+  border-radius: 8px;
+  background-color: #ffae01;
+  color: black;
+  font-size: 23px;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  transition: border 0.2s;
+}
+
+button:hover, button:active {
+  border: 5px solid #fbb92b;
+}
+
+.social {
+  padding-bottom: 60px;
+}
+
+.social a {
+  padding: 0 10px;
+}
+
+.social img {
+  width: 3%;
+}
+ /*----------------- footer ---------------------*/
+ footer{
+   position: fixed;
+   bottom: 0;
+
+   width: 100%;
+ }
