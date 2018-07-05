@@ -29,8 +29,6 @@ body {
       margin-left: 20px;
       transition: 1s all;
       &:hover {
-        // border : red 1px solid;
-        // margin-top: -10px;
                 transform: translateY(-5px);
       }
 
@@ -52,7 +50,12 @@ body {
 .bio {
   background-color: black;
   height: 50vh;
+  color: white;
+  p {
+    margin: 0;
+  }
 }
+
 
 .coaching {
   height: 50vh;
