@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+/* main menu */
+.main {
+  background: url("../img/back.jpg") no-repeat;
+  background-size: cover;
+  background-position: left center;
+  height: 100vh;
+
+  ul {
+    margin-top: 0;
+    padding-top: 20px;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-left: 20px;
+      transition: 1s all;
+      &:hover {
+        // border : red 1px solid;
+        // margin-top: -10px;
+                transform: translateY(-5px);
+      }
+
+      a {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-decoration: none;
+        padding-bottom: 5px;
+        &:hover {
+          color: rgb(133, 133, 133);
+        }
+      }
+    }
+  }
+}
+
+.bio {
+  background-color: black;
+  height: 50vh;
+}
+
+.coaching {
+  height: 50vh;
+}
+
+.contact {
+  background: black;
+  height: 50vh;
+}
+
+.info {
+  padding-top: 11%;
+  padding-left: 11%;
+}
+
+h1 {
+  font-size: 3rem;
+  // font-family: 'Lora', serif;
+  letter-spacing: 5px;
+}
+
+h2 {
+  margin: -3% 0 0 11%;
+}
