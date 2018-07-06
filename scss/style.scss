@@ -12,6 +12,12 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
+
+// header {
+//   position: fixed;
+//   top:0;
+// }
+
 /* main menu */
 .main {
   background: url("../img/back.jpg") no-repeat;
@@ -74,17 +80,21 @@ padding: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10%;
 }
 
 .image {
-
+  background: url('../img/luk2.png') no-repeat;
   height: 100%;
+  background-position: center;
+  background-size: cover;
+}
 
+
+
+.img2 {
   background: url('../img/luk1.png') no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
 }
 
 .coaching {
@@ -110,5 +120,6 @@ h1 {
 }
 
 h2 {
+  font-size: 1.7rem;
   margin: 0 auto;
 }
