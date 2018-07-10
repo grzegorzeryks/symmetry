@@ -12,13 +12,12 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
-
 // header {
 //   position: fixed;
 //   top:0;
 // }
-
 /* main menu */
+
 .main {
   background: url("../img/back.jpg") no-repeat;
   background-size: cover;
@@ -57,23 +56,23 @@ body {
 }
 
 section {
-    height: 100vh;
+  height: 100vh;
 }
-
-
 
 article {
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: center;
-padding: 5%;
+  padding: 5%;
+
   p {
     font-size: 1.3rem;
     margin: 16px 11px;
     line-height: 1.6;
   }
 }
+
 .bio {}
 
 .content {
@@ -83,16 +82,14 @@ padding: 5%;
 }
 
 .image {
-  background: url('../img/luk2.png') no-repeat;
+  background: url("../img/luk2.png") no-repeat;
   height: 100%;
   background-position: center;
   background-size: cover;
 }
 
-
-
 .img2 {
-  background: url('../img/luk1.png') no-repeat;
+  background: url("../img/luk1.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -100,6 +97,10 @@ padding: 5%;
 .coaching {
   background: black;
   color: white;
+
+  article {      margin-top: -405px;
+    width: 88%;
+  }
 }
 
 .contact {}
@@ -124,7 +125,6 @@ h2 {
   margin: 0 auto;
 }
 
- h3 {
-     font-size: 1.2rem;
-
- }
+h3 {
+  font-size: 1.2rem;
+}
