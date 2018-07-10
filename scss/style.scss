@@ -17,7 +17,6 @@ body {
 //   top:0;
 // }
 /* main menu */
-
 .main {
   background: url("../img/back.jpg") no-repeat;
   background-size: cover;
@@ -97,10 +96,33 @@ article {
 .coaching {
   background: black;
   color: white;
+  flex-direction: column;
 
-  article {      margin-top: -405px;
+  article {
     width: 88%;
+    .coach-top {
+      text-align: center;
+      padding: 0;
+    }
   }
+}
+
+.coach-bottom {
+  flex-direction: row;
+  width: 100%;
+  border: red 2px dashed;
+  padding: 0;
+  height: 50%;
+  div {
+    height: 100%;
+    width: 100%;
+    border: white 2px dashed;
+  }
+}
+
+.coach-top {
+padding: 0;
+height: 40%;
 }
 
 .contact {}
