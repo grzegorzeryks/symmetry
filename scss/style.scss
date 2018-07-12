@@ -125,7 +125,9 @@ padding: 0;
 height: 40%;
 }
 
-.contact {}
+.contact {
+  flex-direction: column;
+}
 
 .info {
   margin: 12% 0 0 6%;
@@ -149,6 +151,8 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
+    margin: 40px auto;
+
 }
 
 // Social media links
@@ -157,31 +161,43 @@ h3 {
   position:absolute;
   bottom: 20px;
   left: 20px;
-  .social{
-    width :30px;
-    height: 30px;
-    margin-left: 20px;
-    transition: 1s all;
-    &:hover {
-      transform: translateY(-5px);
-    }
-  }
-  .insta {
-    background: url('../img/insta.png');
-    background-size: cover;
-  }
-  .facebook {
-    background: url('../img/ficon.png');
-        background-size: cover;
-  }
 
-  .linked {
-    background: url('../img/linkedin.png');
-        background-size: cover;
-  }
   a {
     width: 100%;
     height: 100%;
     display: block;
   }
+}
+.social{
+  width :30px;
+  height: 30px;
+  margin-left: 20px;
+  transition: 1s all;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+
+.insta {
+  background: url('../img/insta.png');
+  background-size: cover;
+}
+.facebook {
+  background: url('../img/ficon.png');
+      background-size: cover;
+}
+
+.linked {
+  background: url('../img/linkedin.png');
+      background-size: cover;
+}
+.links {
+  display: flex;
+  bottom: 20px;
+  left: 20px;
+
+  // width: 80%;
+  // height: 80%;
+
 }
