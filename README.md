@@ -1,4 +1,4 @@
-<img alt="Logo" src="img\logo.png" >
+<img alt="Logo" src="img\lukas.png" >
 
 # THE SYMMMETRY PROJECT
 
