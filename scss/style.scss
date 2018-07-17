@@ -17,7 +17,6 @@ body {
 //   top:0;
 // }
 /* main menu */
-
 .main {
   background: url("../img/back.jpg") no-repeat;
   background-size: cover;
@@ -47,7 +46,7 @@ ul {
       letter-spacing: 2px;
       text-decoration: none;
       padding-bottom: 5px;
-
+        cursor: context-menu;
       &:hover {
         color: rgb(133, 133, 133);
       }
@@ -102,7 +101,7 @@ article {
 }
 
 .coaching {
-  background: url('../img/gym.png') no-repeat;
+  background: url("../img/gym.png") no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
@@ -128,17 +127,19 @@ article {
     // height: 100%;
     width: 35%;
     margin-left: 36px;
-    border: rgb(20, 20, 20)  15px solid;
+    border: rgb(20, 20, 20) 15px solid;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 36px;
     transition: all 1s;
+    cursor: pointer;
     &:hover {
       transform: translateY(-5px);
-      border: rgb(41, 40, 40)  15px solid;
+      border: rgb(41, 40, 40) 15px solid;
     }
+
     p {
       font-size: 1.2vw;
       text-align: center;
@@ -160,12 +161,16 @@ article {
   z-index: 1;
   display: flex;
   padding: 6%;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   line-height: 1.6;
 
   h3 {
     margin: 0 auto;
   }
+}
+
+.personal2 {
+  padding-top: 3%;
 }
 
 .contact {

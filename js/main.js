@@ -3,6 +3,8 @@ let onlineClick = document.querySelector('.online');
 let personalBox = document.querySelector('.personal');
 let onlineBox = document.querySelector('.personal2');
 let insideContent = document.querySelector('.inside-content');
+let hybridClick = document.querySelector('.hybrid')
+let hybridBox = document.querySelector('.personal3');
 console.log(insideContent);
 
 let currentBox = personalBox;
@@ -14,6 +16,12 @@ personalCLick.addEventListener('click', function() {
 
 onlineClick.addEventListener('click', function() {
   currentBox = onlineBox;
+  showBox();
+});
+
+hybridClick.addEventListener('click', function() {
+  console.log('worksss');
+  currentBox = hybridBox;
   showBox();
 });
 
