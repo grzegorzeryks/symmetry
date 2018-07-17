@@ -20,7 +20,7 @@ onlineClick.addEventListener('click', function() {
 });
 
 hybridClick.addEventListener('click', function() {
-  console.log('worksss');
+
   currentBox = hybridBox;
   showBox();
 });
