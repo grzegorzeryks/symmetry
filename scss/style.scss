@@ -102,7 +102,9 @@ article {
 }
 
 .coaching {
-  background: black;
+  background: url('../img/gym.png') no-repeat;
+  background-position: center;
+  background-size: cover;
   color: white;
   flex-direction: column;
 
@@ -126,7 +128,7 @@ article {
     // height: 100%;
     width: 35%;
     margin-left: 36px;
-    border: rgb(73, 73, 73)  5px solid;
+    border: rgb(20, 20, 20)  15px solid;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -135,6 +137,7 @@ article {
     transition: all 1s;
     &:hover {
       transform: translateY(-5px);
+      border: rgb(41, 40, 40)  15px solid;
     }
     p {
       font-size: 1.2vw;
