@@ -1,22 +1,38 @@
 console.log('elo');
 
 let personalCLick = document.querySelector('.oneonone');
-let personalBox = document.querySelector('.personal')
-let insideContent = document.querySelector('.inside-content')
+let onlineClick = document.querySelector('.online');
+let personalBox = document.querySelector('.personal');
+let onlineBox =document.querySelector('.personal2');
+let insideContent = document.querySelector('.inside-content');
 console.log(insideContent);
-personalCLick.addEventListener('click', showBox);
 
-personalBox.addEventListener('click', hideBox);
+let currentBox = personalBox;
+console.log(currentBox);
+
+personalCLick.addEventListener('click', function(){
+  currentBox = personalBox;
+showBox();
+});
+onlineClick.addEventListener('click', function(){
+  console.log('online dziala');
+    currentBox = onlineBox;
+      showBox();
+});
+
 
 function hideBox(){
-  personalBox.style.left = '-2000px';
+  currentBox.style.left = '-2000px';
 }
+
+
 
 
 function showBox(){
   console.log('works');
-  personalBox.style.left = '0';
-  personalBox.style.transition = 'all 0.8s';
+  currentBox.style.left = '0';
+  currentBox.style.transition = 'all 0.8s';
+  currentBox.addEventListener('click', hideBox);
 }
 
 // defend.addEventListener('click', defenseAction);
