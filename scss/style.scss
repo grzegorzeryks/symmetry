@@ -17,13 +17,12 @@ body {
 //   top:0;
 // }
 /* main menu */
+
 .main {
   background: url("../img/back.jpg") no-repeat;
   background-size: cover;
   background-position: left center;
   height: 100vh;
-
-
 }
 
 ul {
@@ -109,6 +108,7 @@ article {
 
   article {
     width: 88%;
+
     .coach-top {
       text-align: center;
       padding: 0;
@@ -119,19 +119,33 @@ article {
 .coach-bottom {
   flex-direction: row;
   width: 100%;
-  border: red 2px dashed;
-  padding: 0;
+  padding: 30px;
   height: 50%;
+
   div {
-    height: 100%;
-    width: 100%;
-    border: white 2px dashed;
+    // height: 100%;
+    width: 35%;
+    margin-left: 36px;
+    border: rgb(73, 73, 73)  5px solid;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 36px;
+    transition: all 1s;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
   }
 }
 
 .coach-top {
-padding: 0;
-height: 40%;
+  padding: 0;
+  height: 40%;
 }
 
 .contact {
@@ -160,14 +174,13 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-    margin: 40px auto;
-
+  margin: 40px auto;
 }
-
 // Social media links
+
 .social-links {
   display: flex;
-  position:absolute;
+  position: absolute;
   bottom: 20px;
   left: 20px;
 
@@ -177,42 +190,45 @@ h3 {
     display: block;
   }
 }
-.social{
-  width :30px;
+
+.social {
+  width: 30px;
   height: 30px;
   margin-left: 20px;
   transition: 1s all;
+
   &:hover {
     transform: translateY(-5px);
   }
 }
 
-
 .insta {
-  background: url('../img/insta.png');
+  background: url("../img/insta.png");
   background-size: cover;
 }
+
 .facebook {
-  background: url('../img/ficon.png');
-      background-size: cover;
+  background: url("../img/ficon.png");
+  background-size: cover;
 }
 
 .linked {
-  background: url('../img/linkedin.png');
-      background-size: cover;
+  background: url("../img/linkedin.png");
+  background-size: cover;
 }
+
 .links {
   display: flex;
   bottom: 20px;
   left: 20px;
   justify-content: center;
-
 }
-
 //footer-menu
+
 footer {
   background: black;
   height: 60px;
+
   ul li a {
     color: white;
   }
