@@ -20,7 +20,6 @@ onlineClick.addEventListener('click', function() {
 });
 
 hybridClick.addEventListener('click', function() {
-
   currentBox = hybridBox;
   showBox();
 });
@@ -30,7 +29,7 @@ function hideBox() {
   currentBox.style.left = '-2000px';
 }
 
-//
+
 
 function showBox() {
   console.log('works');
@@ -38,5 +37,3 @@ function showBox() {
   currentBox.style.transition = 'all 0.8s';
   currentBox.addEventListener('click', hideBox);
 }
-
-// defend.addEventListener('click', defenseAction);
