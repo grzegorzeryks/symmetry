@@ -87,6 +87,13 @@ article {
   background-size: cover;
 }
 
+.image2 {
+  background: url("../img/luk3.png") no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
 .img2 {
   background: url("../img/luk1.png") no-repeat;
   background-position: center;
@@ -126,7 +133,7 @@ height: 40%;
 }
 
 .contact {
-  flex-direction: column;
+  // flex-direction: column;
 }
 
 .info {
@@ -196,9 +203,7 @@ h3 {
   display: flex;
   bottom: 20px;
   left: 20px;
-
-  // width: 80%;
-  // height: 80%;
+  justify-content: center;
 
 }
 
