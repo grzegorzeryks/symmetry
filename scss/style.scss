@@ -13,7 +13,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 /* main menu */
-
 .main {
   background: url("../img/back.jpg") no-repeat;
   background-size: cover;
@@ -21,31 +20,48 @@ body {
   height: 100vh;
 }
 
-.bio {
-  article:nth-child(1) {
-    h2:nth-child(5) {
-      margin-top: 4%;
-      color: rgb(187, 43, 43);
-              transition: all 1s;
-      &:hover {
-        cursor: pointer;
+.gallery-click {
+  margin-top: 4%;
+  color: rgb(187, 43, 43);
+  transition: all 1s;
 
-        transform: translateY(-5px);
-      }
-    }
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
   }
 }
-// #bio > article:nth-child(1) > h2:nth-child(5) {
-//   color: rgb(139, 38, 86);
-// }
+
 .gallery {
-  width: 80%;
-  height: 80%;
-  z-index: 1;
+  width: 10%;
+  height: 10%;
   background: white;
+  opacity: 0.92;
+  position: absolute;
+  border: 5px solid rgb(164, 161, 167);
+  visibility: hidden;
+  z-index: 1;
+  transition: all 0.9s;
 }
 
+.gallery-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+  right: -18px;
+  top: -18px;
+  cursor: pointer;
 
+  span {
+    font-weight: bold;
+    top: -6px;
+    left: 9px;
+    position: absolute;
+    font-size: 1.7em;
+    color: white;
+  }
+}
 
 ul {
   margin-top: 0;

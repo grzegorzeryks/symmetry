@@ -37,3 +37,25 @@ function showBox() {
   currentBox.style.transition = 'all 0.8s';
   currentBox.addEventListener('click', hideBox);
 }
+
+// gallery popup
+let galleryClick = document.querySelector('.gallery-click');
+console.log(galleryClick);
+let gallerySection = document.querySelector('.gallery');
+
+galleryClick.addEventListener('click', function() {
+  gallerySection.style.visibility = 'visible';
+  gallerySection.style.width = '80%';
+  gallerySection.style.height = '80%';
+});
+
+//closing gallery popup
+let closeGalleryButton = document.querySelector('.gallery-close');
+console.log(closeGalleryButton);
+closeGalleryButton.addEventListener('click', function()
+{
+  gallerySection.style.visibility = 'hidden';
+  gallerySection.style.width = '10%';
+  gallerySection.style.height = '10%';
+
+});
