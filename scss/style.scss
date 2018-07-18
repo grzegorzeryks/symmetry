@@ -295,6 +295,46 @@ h3 {
     display: block;
   }
 }
+//gallery
+
+.gallery-container {
+  margin: 0.5%;
+  display: flex;
+  height: 96%;
+  flex-wrap: wrap;
+
+  div {
+    background-color: black;
+    background-position: top;
+    background-size: cover;
+    width: 23%;
+    margin: 1%;
+  }
+  .photo-1 {
+    background-image: url('../img/1.jpg');
+  }
+  .photo-2 {
+    background-image: url('../img/2.jpg');
+  }
+  .photo-3 {
+    background-image: url('../img/3.jpg');
+  }
+  .photo-4 {
+    background-image: url('../img/4.jpg');
+  }
+  .photo-5 {
+    background-image: url('../img/5.jpg');
+  }
+  .photo-6 {
+    background-image: url('../img/6.jpg');
+  }
+  .photo-7 {
+    background-image: url('../img/7.jpg');
+  }
+  .photo-8 {
+    background-image: url('../img/8.jpg');
+  }
+}
 //footer-menu
 
 footer {
