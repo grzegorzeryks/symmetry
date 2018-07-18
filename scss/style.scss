@@ -35,12 +35,12 @@ body {
   width: 10%;
   height: 10%;
   background: white;
-  opacity: 0.92;
+  // opacity: 0.92;
   position: absolute;
   border: 5px solid rgb(164, 161, 167);
   visibility: hidden;
   z-index: 1;
-  transition: all 0.9s;
+  transition: all 0.75s;
 }
 
 .gallery-close {
