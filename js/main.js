@@ -66,4 +66,15 @@ console.log(picturesArray);
 
 for (var i = 0; i < picturesArray.length; i++) {
   console.log(picturesArray[i]);
+    picturesArray[i].addEventListener('click', function(e){
+      console.log('pic works');
+      this.style.width= '100%';
+      this.style.height = '100%';
+      this.style.border = 'black 1px dashed';
+      this.style.backgroundSize = 'contain';
+      this.style.backgroundRepeat = 'no-repeat';
+      this.style.position = 'absolute';
+      this.style.top = '-13px';
+      this.style.left= '-13px';
+    });
 }
