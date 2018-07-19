@@ -59,3 +59,11 @@ closeGalleryButton.addEventListener('click', function()
   gallerySection.style.height = '10%';
 
 });
+
+//popup pictures
+let picturesArray = document.querySelectorAll('.gallery-container div');
+console.log(picturesArray);
+
+for (var i = 0; i < picturesArray.length; i++) {
+  console.log(picturesArray[i]);
+}
