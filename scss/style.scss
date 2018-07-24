@@ -13,6 +13,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 /* main menu */
+
 .main {
   background: url("../img/back.jpg") no-repeat;
   background-size: cover;
@@ -66,7 +67,6 @@ body {
 ul {
   margin-top: 0;
   padding-top: 20px;
-  list-style: none;
 
   li {
     display: inline-block;
@@ -78,7 +78,6 @@ ul {
     }
 
     a {
-
       color: black;
       font-size: 1.3vw;
       font-weight: bold;
@@ -198,7 +197,7 @@ article {
   width: 100%;
   position: absolute;
   left: -2000px;
-  background: rgb(34, 34, 34);
+  background: url('../img/gym.png') no-repeat;
   z-index: 1;
   display: flex;
   padding: 6%;
@@ -210,8 +209,27 @@ article {
   }
 }
 
+.contact-button{
+background: rgb(149, 45, 45);
+border-radius: 15px;
+text-align: center;
+right: 85px;
+height: 50px;
+  width: 150px;
+    position: absolute;
+    p {
+      margin-top: 7px;
+      font-size: 1.4vw;
+    }
+  &:hover{
+    transform: translateY(-5px);
+  }
+}
+
+
 .personal2 {
   padding-top: 3%;
+  font-size: 1.1vw;
 }
 
 .contact {
@@ -310,40 +328,50 @@ h3 {
     width: 23%;
     margin: 1%;
   }
+
   .photo-1 {
-    background-image: url('../img/1.jpg');
+    background-image: url("../img/1.jpg");
   }
+
   .photo-2 {
-    background-image: url('../img/2.jpg');
+    background-image: url("../img/2.jpg");
   }
+
   .photo-3 {
-    background-image: url('../img/3.jpg');
+    background-image: url("../img/3.jpg");
   }
+
   .photo-4 {
-    background-image: url('../img/4.jpg');
+    background-image: url("../img/4.jpg");
   }
+
   .photo-5 {
-    background-image: url('../img/5.jpg');
+    background-image: url("../img/5.jpg");
   }
+
   .photo-6 {
-    background-image: url('../img/6.jpg');
+    background-image: url("../img/6.jpg");
   }
+
   .photo-7 {
-    background-image: url('../img/7.jpg');
+    background-image: url("../img/7.jpg");
   }
+
   .photo-8 {
-    background-image: url('../img/8.jpg');
+    background-image: url("../img/8.jpg");
   }
-  // .pic-preview {
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
+  // .gallery-picture {
+  //   width : 100%;
+  //   height : 100%;
+  //   border : black 1px dashed;
+  //   background-size : contain;
+  //   background-repeat : no-repeat;
+  //   position : absolute;
+  //   top : -13px;
+  //   left: -13px;
   // }
 }
-
-
 //footer-menu
-
 footer {
   background: black;
   height: 80px;
