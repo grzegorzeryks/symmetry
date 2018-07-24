@@ -13,7 +13,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 /* main menu */
-
 .main {
   background: url("../img/back.jpg") no-repeat;
   background-size: cover;
@@ -197,7 +196,7 @@ article {
   width: 100%;
   position: absolute;
   left: -2000px;
-  background: url('../img/gym.png') no-repeat;
+  background: url("../img/gym.png") no-repeat;
   z-index: 1;
   display: flex;
   padding: 6%;
@@ -209,23 +208,26 @@ article {
   }
 }
 
-.contact-button{
-background: rgb(149, 45, 45);
-border-radius: 15px;
-text-align: center;
-right: 85px;
-height: 50px;
+.contact-button {
+  background: rgb(149, 45, 45);
+  border-radius: 15px;
+  text-align: center;
+  right: 85px;
+  height: 50px;
   width: 150px;
-    position: absolute;
-    p {
-      margin-top: 7px;
-      font-size: 1.4vw;
-    }
-  &:hover{
+  bottom: 20px;
+  position: absolute;
+  transition: all 1s;
+  cursor: pointer;
+  p {
+    margin-top: 7px;
+    font-size: 1.4vw;
+  }
+
+  &:hover {
     transform: translateY(-5px);
   }
 }
-
 
 .personal2 {
   padding-top: 3%;
@@ -372,6 +374,7 @@ h3 {
   // }
 }
 //footer-menu
+
 footer {
   background: black;
   height: 80px;
