@@ -40,7 +40,6 @@ function showBox() {
 
 // gallery popup
 let galleryClick = document.querySelector('.gallery-click');
-console.log(galleryClick);
 let gallerySection = document.querySelector('.gallery');
 
 galleryClick.addEventListener('click', function() {
@@ -62,20 +61,17 @@ closeGalleryButton.addEventListener('click', function()
 
 //popup pictures
 let picturesArray = document.querySelectorAll('.gallery-container div');
-console.log(picturesArray);
+let galleryPicture = document.querySelector('.gallery-picture');
+
+
 
 for (var i = 0; i < picturesArray.length; i++) {
-  console.log(picturesArray[i]);
-    picturesArray[i].addEventListener('click', function(e){
-      console.log('pic works');
 
-      this.style.width= '100%';
-      this.style.height = '100%';
-      this.style.border = 'black 1px dashed';
-      this.style.backgroundSize = 'contain';
-      this.style.backgroundRepeat = 'no-repeat';
-      this.style.position = 'absolute';
-      this.style.top = '-13px';
-      this.style.left= '-13px';
+    picturesArray[i].addEventListener('click', function(e){
+
+      galleryPicture.style.marginLeft = '0px';
+      galleryPicture.addEventListener('click', function(){
+              galleryPicture.style.marginLeft = '-2000px';
+      })
     });
 }
