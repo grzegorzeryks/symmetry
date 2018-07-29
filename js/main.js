@@ -51,8 +51,7 @@ galleryClick.addEventListener('click', function() {
 //closing gallery popup
 let closeGalleryButton = document.querySelector('.gallery-close');
 console.log(closeGalleryButton);
-closeGalleryButton.addEventListener('click', function()
-{
+closeGalleryButton.addEventListener('click', function() {
   gallerySection.style.visibility = 'hidden';
   gallerySection.style.width = '10%';
   gallerySection.style.height = '10%';
@@ -66,12 +65,17 @@ let galleryPicture = document.querySelector('.gallery-picture');
 
 
 for (var i = 0; i < picturesArray.length; i++) {
+     let elem = picturesArray[i];
+          console.log(picturesArray[i]);
+  picturesArray[i].addEventListener('click', function(e) {
+     console.log(elem);
+     let elemStyle = window.getComputedStyle(elem, null).getPropertyValue("background-image");
+     console.log(elemStyle);
+    galleryPicture.style.marginLeft = '0px';
+    galleryPicture.style.backgroundImage = elemStyle;
+    galleryPicture.addEventListener('click', function() {
 
-    picturesArray[i].addEventListener('click', function(e){
-
-      galleryPicture.style.marginLeft = '0px';
-      galleryPicture.addEventListener('click', function(){
-              galleryPicture.style.marginLeft = '-2000px';
-      })
-    });
+      galleryPicture.style.marginLeft = '-2000px';
+    })
+  });
 }
