@@ -65,16 +65,13 @@ let galleryPicture = document.querySelector('.gallery-picture');
 
 
 for (var i = 0; i < picturesArray.length; i++) {
-     let elem = picturesArray[i];
-          console.log(picturesArray[i]);
+  let elem = picturesArray[i];
+  console.log(picturesArray[i]);
   picturesArray[i].addEventListener('click', function(e) {
-     console.log(elem);
-     let elemStyle = window.getComputedStyle(elem, null).getPropertyValue("background-image");
-     console.log(elemStyle);
+    let elemStyle = window.getComputedStyle(elem, null).getPropertyValue("background-image");
     galleryPicture.style.marginLeft = '0px';
     galleryPicture.style.backgroundImage = elemStyle;
     galleryPicture.addEventListener('click', function() {
-
       galleryPicture.style.marginLeft = '-2000px';
     })
   });
