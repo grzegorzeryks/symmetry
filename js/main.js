@@ -79,9 +79,11 @@ for (var i = 0; i < picturesArray.length; i++) {
 //popup contact
 let contactButtons = document.querySelectorAll('.contact-button');
 console.log(contactButtons);
+let contactForm = document.querySelector('.contact-form');
 
 for (var i = 0; i < contactButtons.length; i++) {
   contactButtons[i].addEventListener('click', function(){
     console.log('button works');
+    contactForm.style.marginLeft = '0px'
   });
 }
