@@ -55,7 +55,6 @@ closeGalleryButton.addEventListener('click', function() {
   gallerySection.style.visibility = 'hidden';
   gallerySection.style.width = '10%';
   gallerySection.style.height = '10%';
-
 });
 
 //popup pictures
@@ -73,6 +72,16 @@ for (var i = 0; i < picturesArray.length; i++) {
     galleryPicture.style.backgroundImage = elemStyle;
     galleryPicture.addEventListener('click', function() {
       galleryPicture.style.marginLeft = '-2000px';
-    })
+    });
+  });
+}
+
+//popup contact
+let contactButtons = document.querySelectorAll('.contact-button');
+console.log(contactButtons);
+
+for (var i = 0; i < contactButtons.length; i++) {
+  contactButtons[i].addEventListener('click', function(){
+    console.log('button works');
   });
 }
