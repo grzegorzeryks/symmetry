@@ -89,4 +89,8 @@ for (var i = 0; i < contactButtons.length; i++) {
 }
 
 //popup contact close
-let closeContactPopup = document.querySelector('popup-close');
+let closeContactPopup = document.querySelector('.popup-close');
+
+closeContactPopup.addEventListener('click', function(){
+  contactForm.style.marginLeft = '-2200px';
+})
