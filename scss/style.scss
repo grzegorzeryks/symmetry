@@ -225,7 +225,7 @@ body {
     z-index: 1;
     display: flex;
     padding: 6%;
-    font-size: 1.2vw;
+    font-size: 1.3rem;
     line-height: 1.6;
 
     h3 {
@@ -266,6 +266,10 @@ body {
     font-size: 1.1vw;
   }
 
+@media only screen and (max-width: 1049px) {
+  .personal2 {
+  font-size: 0.91rem;}
+}
   .contact {
     // flex-direction: column;
   }
