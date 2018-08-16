@@ -121,7 +121,6 @@ ul {
   }
 }
 
-
 section {
   height: 100vh;
 }
@@ -139,21 +138,27 @@ section {
       line-height: 1.6;
     }
   }
-
 }
 @media only screen and (max-width: 1108px) {
   .image {
     display: none;
   }
+
   .image2 {
     display: none;
   }
 }
+@media only screen and (max-width: 468px)  {
+  ul {
+    padding: 20px;
 
-@media only screen and (max-width: 1108px) {
-  
+    li {
+      a {
+        font-size: 1.7vh;
+      }
+    }
+  }
 }
-
 
 .bio {}
 
@@ -291,8 +296,6 @@ section {
   }
 }
 
-
-
 .info {
   margin: 12% 0 0 6%;
   height: 200px;
@@ -318,6 +321,7 @@ h3 {
   margin: 22px auto;
 }
 // Social media links
+
 .social-links {
   display: flex;
   position: absolute;
@@ -370,6 +374,7 @@ h3 {
   }
 }
 //gallery
+
 .gallery-container {
   margin: 0.5%;
   display: flex;
@@ -417,6 +422,7 @@ h3 {
   }
 }
 // gallery picture
+
 .gallery-picture {
   background: rgba(20, 20, 20, 0.94);
   height: 100vh;
@@ -430,6 +436,7 @@ h3 {
   background-repeat: no-repeat;
 }
 //contact form
+
 .contact-form {
   width: 40%;
   height: 80%;
@@ -501,6 +508,7 @@ button {
   }
 }
 //footer-menu
+
 footer {
   background: black;
   height: 80px;
