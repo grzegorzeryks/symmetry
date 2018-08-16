@@ -148,7 +148,7 @@ section {
     display: none;
   }
 }
-@media only screen and (max-width: 468px)  {
+@media only screen and (max-width: 468px) {
   ul {
     padding: 20px;
 
@@ -157,6 +157,34 @@ section {
         font-size: 1.7vh;
       }
     }
+  }
+
+  .info {
+    margin: -8% 0 0;
+  }
+
+  section {
+    height: auto;
+  }
+
+  .coach-bottom {
+    display: block;
+
+    div {
+      width: auto;
+
+      p {
+        display: none;
+      }
+    }
+  }
+
+  .coach-top {
+    margin-top: 20px;
+  }
+
+  .personal {
+    height: auto;
   }
 }
 
@@ -200,7 +228,6 @@ section {
 
     .coach-top {
       text-align: center;
-      padding: 0;
     }
   }
 }
@@ -213,7 +240,7 @@ section {
 
   div {
     // height: 100%;
-    width: 35%;
+    // width: 35%;
     margin-left: 36px;
     border: rgb(20, 20, 20) 15px solid;
     border-radius: 30px;
